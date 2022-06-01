@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input type="search" onkeyup="escribir(this)">
+    <input type="search" onkeyup="escribir(this)" id ="inp">
     <ol id="resultados">
 
     </ol>
@@ -28,6 +28,10 @@
                 })
             }
         }
+        const as =(t) =>{
+            let inp = document.getElementById("inp");
+            inp.value = t;
+        } 
     </script>
 </body>
 

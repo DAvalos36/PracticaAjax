@@ -19,7 +19,8 @@
             var listares = document.getElementById("resultados");
             if (texto.length > 0) {
                 var conexion;
-
+                aposjdóajodsp
+                añsdjpo
                 if (window.XMLHttpRequest) {
                     conexion = new XMLHttpRequest();
                 }

@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <style>
+        li:hover {
+            color: blueviolet;
+            font-size: larger;
+        }
+    </style>
     <input type="search" onkeyup="escribir(this)" id="buscador">
     <ol id="resultados">
 
@@ -44,8 +50,10 @@
 
         function textoEnBarra(texto){
             var barraBusqueda = document.getElementById("buscador");
-            console.log(texto)
+            // console.log(texto)
+            document.getElementById("resultados").innerHTML = "";
             barraBusqueda.value = texto;
+            barraBusqueda.focus()
         }
 
 

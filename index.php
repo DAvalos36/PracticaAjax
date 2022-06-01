@@ -23,6 +23,7 @@
                 añsdjpo
                 if (window.XMLHttpRequest) {
                     conexion = new XMLHttpRequest();
+                    aspoodkjñasd
                 }
                 else {
                     conexion = new ActiveXObject("Microsoft.XMLHTTP");

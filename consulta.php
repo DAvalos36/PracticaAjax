@@ -6,7 +6,7 @@
     $res = preg_grep("/$b */", $arch);
 
     foreach ($res as $value) {
-        echo "<li> $value </li>";
+        echo "<li onclick='textoEnBarra(this.textContent)'>$value</li>";
     }
 
 ?>

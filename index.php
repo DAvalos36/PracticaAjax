@@ -9,11 +9,10 @@
 </head>
 
 <body>
-    <input type="search" onkeyup="escribir(this)">
+    <input type="search" onkeyup="escribir(this)" id="buscador">
     <ol id="resultados">
 
     </ol>
-
     <script>
         function escribir(i) {
             var texto = i.value
@@ -41,6 +40,12 @@
                 conexion.open("GET", "consulta.php?b="+texto, true);
                 conexion.send();
             }
+        }
+
+        function textoEnBarra(texto){
+            var barraBusqueda = document.getElementById("buscador");
+            console.log(texto)
+            barraBusqueda.value = texto;
         }
 
 

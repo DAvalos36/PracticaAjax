@@ -22,12 +22,17 @@
     </style>
     <div class="centro">
     <input type="search" onkeyup="escribir(this)" id="buscador" autofocus>
-    <ol id="resultados">
 
     </div>
     
+    <div class="cen">
+    <ol id="resultados">
 
     </ol>
+    </div>
+    
+
+    
     <script>
         function escribir(i) {
             var texto = i.value
